@@ -1,0 +1,135 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2.5rem 1.25rem 3rem;
+  text-align: center;
+}
+
+.app h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  letter-spacing: 0.04em;
+}
+
+.subtitulo {
+  max-width: 32rem;
+  color: #c5d0e0;
+  line-height: 1.5;
+}
+
+.mensagem {
+  min-width: 10rem;
+  padding: 0.65rem 1.5rem;
+  border-radius: 999px;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  border: 2px solid transparent;
+}
+
+.mensagem-vermelho {
+  color: #ffd6d6;
+  background: rgba(220, 38, 38, 0.22);
+  border-color: #ef4444;
+}
+
+.mensagem-amarelo {
+  color: #fff4c2;
+  background: rgba(234, 179, 8, 0.2);
+  border-color: #facc15;
+}
+
+.mensagem-verde {
+  color: #d4ffe4;
+  background: rgba(22, 163, 74, 0.22);
+  border-color: #22c55e;
+}
+
+.controles-principais {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.botao-principal {
+  cursor: pointer;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.85rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0b1220;
+  background: linear-gradient(180deg, #f8fbff 0%, #c9d7ea 100%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
+}
+
+.botao-principal:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.botao-principal:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.botao-automatico.executando {
+  color: #fff4c2;
+  background: linear-gradient(180deg, #b45309 0%, #7c2d12 100%);
+}
+
+.status-automatico {
+  color: #9fb0c7;
+  font-size: 0.95rem;
+}
+
+.botoes-cores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.botao-cor {
+  cursor: pointer;
+  min-width: 7.5rem;
+  border-radius: 0.7rem;
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+  color: #fff;
+  border: 2px solid transparent;
+  opacity: 0.75;
+}
+
+.botao-cor.ativo {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.botao-vermelho {
+  background: #dc2626;
+}
+
+.botao-amarelo {
+  background: #ca8a04;
+}
+
+.botao-verde {
+  background: #16a34a;
+}
+
+.botao-vermelho.ativo {
+  border-color: #fecaca;
+  box-shadow: 0 0 16px rgba(239, 68, 68, 0.7);
+}
+
+.botao-amarelo.ativo {
+  border-color: #fef08a;
+  box-shadow: 0 0 16px rgba(250, 204, 21, 0.7);
+}
+
+.botao-verde.ativo {
+  border-color: #bbf7d0;
+  box-shadow: 0 0 16px rgba(34, 197, 94, 0.7);
+}
